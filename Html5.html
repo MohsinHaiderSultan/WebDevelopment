@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aaaa.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="e.g. Sultan" required><br><br>
+        
+        <label for="cnic">CNIC:</label>
+        <input type="text" id="cnic" name="cnic" pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}" placeholder="e.g. 12345-1234567-1" required><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" cols="30" rows="10" disabled>Disabled</textarea><br><br>
+        
+        <label for="note">Note:</label>
+        <input type="text" id="note" name="note" value="Readonly" readonly><br><br>
+        
+        <label for="country">Country:</label>
+        <input list="countryList" id="country" name="country" autocomplete="country">
+        <datalist id="countryList">
+            <option value="Pakistan">
+            <option value="India">
+            <option value="China">
+            <option value="America">
+        </datalist>
+        
+        <input type="submit" id="register" value="Register">
+    </form>
+</body>
+</html>

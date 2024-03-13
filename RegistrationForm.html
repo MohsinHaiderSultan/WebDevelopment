@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="submit_form.php" method="post">
+            <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Date of Birth:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <select id="city" name="city" required>
+                    <option value="">Select</option>
+                    <option value="Lahore">Lahore</option>
+                    <option value="Islamabad">Islamabad</option>
+                    <option value="Sahiwal">Sahiwal</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label><br>
+                <input type="radio" id="department" name="department" value="English">
+                <label for="department">English</label><br>
+                <input type="radio" id="department" name="department" value="Computer">
+                <label for="department">Computer</label><br>
+                <input type="radio" id="department" name="department" value="Maths">
+                <label for="department">Maths</label><br>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="10" cols="30" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="cta-button">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
